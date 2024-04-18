@@ -1,0 +1,105 @@
+#container1{
+    height:500px;
+    width:500px;
+    background-color: black;
+    color: white;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+.board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  
+  .tile {
+    color: currentColor;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-border {
+    border-right: 0.2em solid #f1f435;
+  }
+  
+  .bottom-border {
+    border-bottom: 0.2em solid #f1f435;
+  }
+  .x-hover:hover::after {
+    content: "X";
+    opacity: 0.4;
+  }
+  
+  .o-hover:hover::after {
+    content: "O";
+    opacity: 0.4;
+  }
+  
+.strike {
+    position: absolute;
+    background-color: rgb(11, 120, 230);
+  }
+  
+  .strike-row-1 {
+    width: 21%;
+    height: 7px;
+    top: 25%;
+    margin-left: 9%;
+  }
+  .strike-row-2 {
+    width: 21%;
+    height: 7px;
+    top: 42%;
+    margin-left: 9%;
+
+  }
+  .strike-row-3 {
+    width: 21%;
+    height: 7px;
+    top: 60%;
+    margin-left: 9%;
+
+  }
+  .strike-column-1 {
+    height: 41%;
+    width: 7px;
+    left: 15%;
+    bottom:37%;
+    margin-left: 26%;
+    
+  }
+  .strike-column-2 {
+    height: 44%;
+    width: 7px;
+    left: 15.5%;
+    bottom:35%;
+    margin-left: 34%;
+  }
+  .strike-column-3 {
+    height: 44%;
+    width: 7px;
+    left: 15%;
+    bottom:35%;
+    margin-left: 42%;
+  }
+  .strike-diagonal-1 {
+    width: 20%;
+    height: 7px;
+    top: 40%;
+    left: 39%;
+    transform: skewY(44deg);
+  }
+  .strike-diagonal-2 {
+    width: 20%;
+    height: 7px;
+    top: 45%;
+    left: 39%;
+    bottom:10%;
+    transform: skewY(-43deg);
+  }
+  

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background:url("https://img.freepik.com/premium-vector/tic-tac-toe-seamless-pattern-yellow-background-vector-illustration_723710-1062.jpg?w=740");
+}
+#container{
+    background-color: black;
+    height:600px;
+    width:500px;
+    margin-left: 30%;
+}
